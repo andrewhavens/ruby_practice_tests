@@ -19,6 +19,6 @@ class rps_game_winner_tests < MiniTest::Unit::TestCase
 
 	def test_paper_beats_rock
 		game = [['one', 'p'],['two','r']]
-		assert 'player1', rps_game_winner(game)
+		assert_equal ['one', 'p'], rps_game_winner(game)
 	end
 end
